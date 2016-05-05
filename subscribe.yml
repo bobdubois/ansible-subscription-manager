@@ -1,0 +1,8 @@
+---
+- hosts: [rhel_subscribed] 
+  vars:
+#    my_rhn_pass: test
+
+  tasks:
+  - name: subscribe systems to Red Hat
+    redhat_subscription: state=present username=bdubois@redhat.com password={{ my_rhn_pass }} autosubscribe=true

@@ -4,5 +4,5 @@
 #    my_rhn_pass: test
 
   tasks:
-  - name: subscribe systems to Red Hat
+  - name: unsubscribe systems from Red Hat
     redhat_subscription: state=absent
